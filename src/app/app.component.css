@@ -39,6 +39,7 @@
     border: 1px solid black;
     border-radius: 80px;
     background-color: #bdd3d9;
+    position: absolute;
   }
 
   .new-post input[type="text"] {
@@ -46,37 +47,35 @@
     height: 15%;
     padding: 10px;
     border: none;
+    margin-left: 50px;
     background-color: #bdd3d9;
     border-radius: 15px;
     margin-bottom: 10px;
   }
-  
-  
 
-  /* Estilo para o conteúdo principal
-  .main-content {
-    display: flex;
-    padding: 30px;
+  .content {
+    display: flex; /* Exibe os elementos filhos (new-post e feed) lado a lado */
+    justify-content: space-between;
+    padding: 10px;
+    gap: 1px; /* Espaço entre as colunas */
   }
 
-  
-  
-  .new-post .post-options {
-    display: flex;
-    gap: 10px;
+  .post{
+    background-color: #F3F3F3;
+    width: 400px;
+    height: 220px;
+    border-radius: 20px;
   }
   
-  .new-post button {
-    padding: 10px 20px;
-    background-color: black;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
+ .feed {
+  flex: 2;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
 
-   */
-
-  
-  
+.nomeUser{
+  font-size: 10px;
+  padding: 5px;
+  padding-left: 60px;
+}
