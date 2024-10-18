@@ -1,0 +1,82 @@
+/* Estilo para o cabeçalho */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #bdd3d9; /* Ajuste para a cor do fundo do header */
+    padding: 8px 30px;
+    width: 100%;
+  }
+  
+  .menus {
+   color: white;
+   padding: 60px;
+   font-size: 20px;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-weight: 500;
+  }
+
+  .logoheader{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+  }
+
+  .new-post {
+    background-color: #F3F3F3;
+    padding: 30px;
+    margin-top: 40px;
+    margin-left: 15px;
+    width: 380px;
+    height: 80px;
+    margin-right: 20px;
+    border-radius: 30px;
+  }
+
+  .iconPerfil{
+    width: 42px;
+    height: 42px;
+    border: 1px solid black;
+    border-radius: 80px;
+    background-color: #bdd3d9;
+  }
+
+  .new-post input[type="text"] {
+    width: 80%;
+    height: 15%;
+    padding: 10px;
+    border: none;
+    background-color: #bdd3d9;
+    border-radius: 15px;
+    margin-bottom: 10px;
+  }
+  
+  
+
+  /* Estilo para o conteúdo principal
+  .main-content {
+    display: flex;
+    padding: 30px;
+  }
+
+  
+  
+  .new-post .post-options {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .new-post button {
+    padding: 10px 20px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+
+   */
+
+  
+  
