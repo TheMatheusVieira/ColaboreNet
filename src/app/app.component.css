@@ -22,60 +22,132 @@
     position: absolute;
   }
 
-  .new-post {
-    background-color: #F3F3F3;
-    padding: 30px;
-    margin-top: 40px;
-    margin-left: 15px;
-    width: 380px;
-    height: 80px;
-    margin-right: 20px;
-    border-radius: 30px;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
 
-  .iconPerfil{
-    width: 42px;
-    height: 42px;
-    border: 1px solid black;
-    border-radius: 80px;
-    background-color: #bdd3d9;
-    position: absolute;
-  }
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  background-color: #d7e3e9;
+  padding: 10px 0;
+  font-size: 18px;
+  color: #4f768e;
+}
 
-  .new-post input[type="text"] {
-    width: 80%;
-    height: 15%;
-    padding: 10px;
-    border: none;
-    margin-left: 50px;
-    background-color: #bdd3d9;
-    border-radius: 15px;
-    margin-bottom: 10px;
-  }
+.container {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+}
 
-  .content {
-    display: flex; /* Exibe os elementos filhos (new-post e feed) lado a lado */
-    justify-content: space-between;
-    padding: 10px;
-    gap: 1px; /* Espaço entre as colunas */
-  }
+.left-section {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
 
-  .post{
-    background-color: #F3F3F3;
-    width: 400px;
-    height: 220px;
-    border-radius: 20px;
-  }
-  
- .feed {
-  flex: 2;
-  background-color: #fff;
-  padding: 10px;
+.right-section {
+  width: 35%;
+}
+
+.post-box, .post, .messages .message, .send-message {
+  background-color: #f3f5f7;
+  padding: 15px;
   border-radius: 10px;
 }
 
-.nomeUser{
-  font-size: 10px;
-  padding: 5px;
-  padding-left: 60px;
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #d7e3e9;
+  display: inline-block;
+}
+
+.post-input {
+  width: calc(100% - 60px);
+  padding: 10px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #cbd8de;
+}
+
+.post-options {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10px;
+  color: #000;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.user-name {
+  margin-left: 50px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.post-actions {
+  display: flex;
+  justify-content: space-around;
+}
+
+.post-actions button {
+  border: none;
+  border-radius: 10px;
+  background-color: #cbd8de;
+  padding: 5px 20px;
+  color: #4f768e;
+  cursor: pointer;
+}
+
+.search-input, .send-message textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #cbd8de;
+  margin-bottom: 10px;
+}
+
+.send-message {
+  background-color: #b8c7d1;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.send-message span {
+  margin-bottom: 5px;
+  color: #4f768e;
+  font-weight: bold;
+}
+
+.send-message button {
+  align-self: flex-end;
+  width: 40px;
+  height: 20px;
+  background-color: #d7e3e9;
+  border: none;
+  border-radius: 10px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.messages .message {
+  height: 30px;
+  background-color: #f3f5f7;
+  border-radius: 10px;
+  margin-bottom: 10px;
 }

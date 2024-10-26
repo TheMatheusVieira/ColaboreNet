@@ -1,0 +1,86 @@
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #d7e3e9;
+    padding: 10px 0;
+    font-size: 18px;
+    color: #4f768e;
+    text-transform: uppercase;
+  }
+  
+  /* Profile Section */
+  .profile-container {
+    padding: 20px;
+  }
+  
+  .profile-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .profile-picture {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #d7e3e9;
+  }
+  
+  .profile-info h1 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .job-title {
+    color: #b8b8b8;
+    font-style: italic;
+  }
+  
+  .profile-info p {
+    margin: 5px 0;
+  }
+  
+  /* Experience Section */
+  .experience-section {
+    margin-top: 30px;
+    background-color: #b8c7d1;
+    padding: 20px;
+    border-radius: 15px;
+  }
+  
+  .experience-section h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #4f768e;
+  }
+  
+  .experience-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    margin-top: 10px;
+  }
+  
+  .experience-item {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .experience-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #4f768e;
+  }
+  
+  .experience-details p {
+    margin: 3px 0;
+  }
+  
+  .divider {
+    width: 1px;
+    height: 60px;
+    background-color: #9db2bf;
+  }
+  
