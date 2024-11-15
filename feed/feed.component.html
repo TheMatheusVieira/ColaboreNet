@@ -1,0 +1,25 @@
+<div class="feed-container">
+    <h1>Feed de Publicações</h1>
+  
+    <!-- Caixa de texto e botão para publicar -->
+    <div class="input-section">
+      <textarea
+        [(ngModel)]="newPost"
+        placeholder="Escreva algo..."
+        rows="3"
+        class="post-input"
+      ></textarea>
+      <button (click)="publishPost()" [disabled]="!newPost.trim()">Publicar</button>
+    </div>
+  
+    <hr />
+  
+    <!-- Lista de posts publicados -->
+    <div class="feed-section">
+      <h2>Publicações:</h2>
+      <div *ngFor="let post of posts; let i = index" class="post">
+        <p>{{ post }}</p>
+      </div>
+    </div>
+  </div>
+  
