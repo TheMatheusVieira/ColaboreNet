@@ -1,0 +1,26 @@
+<div class="cadastro-container">
+  <router-outlet></router-outlet>
+    <div class="cadastro-card">
+      <img [src]="imageUrl" alt="Logo" class="cadastro-logo" />
+        <h2>Cadastro</h2>
+      
+      <form>
+        <div class="form-group">
+          <input type="text" placeholder="Digite seu nome" />
+        </div>
+        <div class="form-group">
+          <input type="email" placeholder="Digite seu email" />
+        </div>
+        <div class="form-group">
+          <input type="password" placeholder="Digite sua senha" />
+        </div>
+        <div class="form-group">
+          <input type="password" placeholder="Digite a senha novamente" />
+        </div>
+        <button type="submit" class="btn-cadastrar">Cadastrar</button>
+        <p class="login-link">Caso já seja cadastrado, <a class="menus" [routerLink]="'/login'">clique aqui</a>.</p>
+      </form>
+    </div>
+  </div>
+  
+  

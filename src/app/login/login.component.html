@@ -1,0 +1,24 @@
+<div class="cadastro-container">
+  <router-outlet></router-outlet>
+  <div class="cadastro-card">
+    <div class="cadastro-header">
+      <img [src]="imageUrl" alt="Logo" class="cadastro-logo" />
+      <h2>Login</h2>
+    </div>
+    <!-- Formulário com evento (ngSubmit) -->
+    <form (ngSubmit)="onLogin()">
+      <div class="form-group">
+        <!-- Vincule o campo ao email -->
+        <input type="email" placeholder="Digite seu email" [(ngModel)]="email" name="email" required />
+      </div>
+      <div class="form-group">
+        <!-- Vincule o campo à senha -->
+        <input type="password" placeholder="Digite sua senha" [(ngModel)]="password" name="password" required />
+      </div>
+      <button type="submit" class="btn-cadastrar">Login</button>
+      <p class="login-link">
+        Caso não tenha se cadastrado, <a class="menus" [routerLink]="'/cadastro'">clique aqui</a>.
+      </p>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,90 @@
+/* Garante que o html e o body ocupem 100% da altura da tela */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container para centralizar o conteúdo */
+.cadastro-container {
+  position: absolute; /* Essential for centering */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centers horizontally and vertically */
+  width: 400px;
+  max-width: 80%; /* Allows for responsiveness */
+  border-radius: 10px;
+  background-color: #c6d9df;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px; /* Added padding for better spacing */
+  /* Add z-index to ensure modal is on top */
+  z-index: 1000;
+}
+
+/* Estilo do cartão de cadastro */
+.cadastro-card {
+  background-color: #d0e5ed;
+  padding: 20px;
+  width: 350px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.cadastro-header {
+  margin-bottom: 20px;
+}
+
+.cadastro-logo {
+  width: 50px;
+  height: 50px;
+}
+
+.cadastro-card h2 {
+  margin-top: 10px;
+  font-size: 24px;
+  color: #5a7d91;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group input {
+  width: 80%;
+  padding: 2%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.btn-cadastrar {
+  background-color: #5a7d91;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.btn-cadastrar:hover {
+  background-color: #486474;
+}
+
+.login-link {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #5a7d91;
+}
+
+.login-link a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #486474;
+}
