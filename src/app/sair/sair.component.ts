@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router'; // Importe o RouterModule para navegação
 
-import { LoginComponent } from '../login/login.component';
-
 @Component({
   selector: 'sair-app',
   templateUrl: './sair.component.html',

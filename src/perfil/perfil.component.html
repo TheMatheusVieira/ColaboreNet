@@ -1,0 +1,55 @@
+<div class="container">
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">
+        <img [src]="imageUrl" class="logoheader" decoding="async" alt="Logo Colabore">
+      </div>
+      <ul>
+        <a class="menus" [routerLink]="'/feed'">Inicial</a>
+        <a class="menus" [routerLink]="'/curriculos'">Currículos</a>
+        <a class="menus" [routerLink]="'/perfil'">Perfil</a>
+        <a class="menus" [routerLink]="'/sair'">Sair</a>
+      </ul>
+    </nav>
+  
+    <!-- Perfil -->
+    <div class="perfil-container">
+      <!-- Foto do perfil -->
+      <div class="perfil-image">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkVZoGW3vdRhfccLRhRbX_7DjzBqF0w6SB5g&s" alt="Imagem do usuário" />
+      </div>
+  
+      <!-- Informações do usuário -->
+      <div class="perfil-info">
+        <h1>MARIELLE PRICE</h1>
+        <p class="cargo">Assistente geral</p>
+        <p>Email: <span>marielleexample.com</span></p>
+        <p>Telefone: <span>(11) 98765-4321</span></p>
+        <p>Localização: <span>São Paulo, SP</span></p>
+      </div>
+  
+      <!-- Experiência -->
+      <div class="experiencia-container">
+        <div class="experiencia">
+          <h2>EXPERIÊNCIA</h2>
+          <div class="cargo">
+            <div class="cargo-info">
+              <p class="cargo-title">Cargo atual do usuário</p>
+              <p>Empresa: <span>XYZ Ltda.</span></p>
+              <p>Data: <span>Jan/2022 - Presente</span></p>
+              <p>Local: <span>São Paulo, SP</span></p>
+            </div>
+          </div>
+          <div class="outros-cargos">
+            <p class="cargo-title">Outros cargos</p>
+            <div class="cargo-info">
+              <p>Empresa: <span>ABC Corp.</span></p>
+              <p>Data: <span>Mar/2020 - Dez/2021</span></p>
+              <p>Local: <span>Rio de Janeiro, RJ</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

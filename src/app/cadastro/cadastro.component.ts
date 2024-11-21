@@ -15,6 +15,5 @@ import { RouterModule } from '@angular/router'; // Importe o RouterModule
 export class CadastroComponent {
   imageUrl: string = 'https://github.com/TheMatheusVieira/ColaboreNet/blob/main/logoCN.jpeg?raw=true';
 
-  
 }
 

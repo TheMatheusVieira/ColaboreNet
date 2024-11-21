@@ -1,0 +1,33 @@
+<div class="container">
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">
+        <img [src]="imageUrl" class="logoheader" decoding="async" alt="Logo Colabore">
+      </div>
+      <ul>
+        <a class="menus" [routerLink]="'/feed'">Inicial</a>
+        <a class="menus" [routerLink]="'/curriculos'">Currículos</a>
+        <a class="menus" [routerLink]="'/perfil'">Perfil</a>
+        <a class="menus" [routerLink]="'/sair'">Sair</a>
+      </ul>
+    </nav>
+  
+  <!-- Seção de Currículos -->
+  <div class="curriculos-container">
+    <div class="curriculo" *ngFor="let curriculo of curriculos">
+      <ng-container *ngIf="curriculo.type === 'image'; else pdfTemplate">
+        <img [src]="curriculo.url" alt="Currículo Imagem" />
+      </ng-container>
+      <ng-template #pdfTemplate>
+        <embed [src]="curriculo.url" type="application/pdf" />
+      </ng-template>
+    </div>
+  </div>
+
+  <!-- Seção de envio -->
+  <div class="envio-curriculo">
+    <p>Envie seu currículo</p>
+    <input type="file" (change)="uploadCurriculo($event)" accept=".pdf,.jpg,.jpeg,.png" />
+  </div>
+</div>
+  
